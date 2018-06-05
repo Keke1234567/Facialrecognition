@@ -1,4 +1,4 @@
-import React from 'react';
+	import React from 'react';
 
 const SignIn = ({ onRouteChange }) => {
 	return(
@@ -22,7 +22,9 @@ const SignIn = ({ onRouteChange }) => {
 			      type="submit" value="Sign in" />
 			    </div>
 			    <div className="lh-copy mt3">
-			      <a href="#0" className="f6 link dim black db">Register</a>
+			      <label className='db fw6 lh-copy f6'>Not a member? </label>
+			      <p onClick={() => onRouteChange('register')}
+			       href="#0" className="f6 link grow pointer black db">Register</p>
 			    </div>
 			  </form>
 			</main>
